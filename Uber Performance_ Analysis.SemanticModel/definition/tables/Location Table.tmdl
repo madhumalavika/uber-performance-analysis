@@ -1,0 +1,47 @@
+table 'Location Table'
+	lineageTag: df6300e9-d377-4c15-8a41-3c238aecdb82
+
+	column LocationID
+		dataType: int64
+		formatString: 0
+		lineageTag: e26a2bd7-6533-4542-92da-222fa5df6b89
+		summarizeBy: none
+		sourceColumn: LocationID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 6fe8eda0-0c30-443c-85ff-f253e69cf1b1
+		summarizeBy: none
+		sourceColumn: Location
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: dc298340-3e6b-4546-97e8-bb1d90ba50e7
+		summarizeBy: none
+		sourceColumn: City
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Location Table' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\kalid\OneDrive\Desktop\POWER BI\Projects\Uber Performance Analysis\Location Table.xlsx"), null, true),
+				    #"Location Table_Sheet" = Source{[Item="Location Table",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Location Table_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"LocationID", Int64.Type}, {"Location", type text}, {"City", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

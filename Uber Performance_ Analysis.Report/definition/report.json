@@ -1,0 +1,149 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.2.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU02",
+      "reportVersionAtImport": {
+        "visual": "2.6.0",
+        "report": "3.1.0",
+        "page": "2.3.0"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU02",
+          "path": "BaseThemes/CY26SU02.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "between5062143712016879.png",
+          "path": "between5062143712016879.png",
+          "type": "Image"
+        },
+        {
+          "name": "car_(1)5921862008577599.png",
+          "path": "car_(1)5921862008577599.png",
+          "type": "Image"
+        },
+        {
+          "name": "car_(2)5104171564190694.png",
+          "path": "car_(2)5104171564190694.png",
+          "type": "Image"
+        },
+        {
+          "name": "CAR-Booking18913551430593556.png",
+          "path": "CAR-Booking18913551430593556.png",
+          "type": "Image"
+        },
+        {
+          "name": "car7249605659511011.png",
+          "path": "car7249605659511011.png",
+          "type": "Image"
+        },
+        {
+          "name": "clock6607237763181073.png",
+          "path": "clock6607237763181073.png",
+          "type": "Image"
+        },
+        {
+          "name": "distance3238453072838211.png",
+          "path": "distance3238453072838211.png",
+          "type": "Image"
+        },
+        {
+          "name": "donut-chart7775286532135303.png",
+          "path": "donut-chart7775286532135303.png",
+          "type": "Image"
+        },
+        {
+          "name": "Home8329464261851752.png",
+          "path": "Home8329464261851752.png",
+          "type": "Image"
+        },
+        {
+          "name": "Info7839723248344108.png",
+          "path": "Info7839723248344108.png",
+          "type": "Image"
+        },
+        {
+          "name": "money25607098367641457.png",
+          "path": "money25607098367641457.png",
+          "type": "Image"
+        },
+        {
+          "name": "Refresh10598154961933448.png",
+          "path": "Refresh10598154961933448.png",
+          "type": "Image"
+        },
+        {
+          "name": "sales7683247778481181.png",
+          "path": "sales7683247778481181.png",
+          "type": "Image"
+        },
+        {
+          "name": "sedan_(1)6685816052647894.png",
+          "path": "sedan_(1)6685816052647894.png",
+          "type": "Image"
+        },
+        {
+          "name": "suv6256737800560336.png",
+          "path": "suv6256737800560336.png",
+          "type": "Image"
+        },
+        {
+          "name": "Uber_Logo6132560028151145.png",
+          "path": "Uber_Logo6132560028151145.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}
